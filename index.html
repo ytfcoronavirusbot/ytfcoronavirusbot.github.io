@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="That's a landing page for our first MATRIX Labs Hackathon">
+    <meta name="author" content="Hackathon México vs Coronavirus">
+
+    <title>Hackathon México vs Coronavirus</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/everloop.png" type="image/x-icon">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+
+    <style type="text/css" id="custom-fonts">
+      /* custom fonts */
+    @font-face {font-family: 'Roboto Regular';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.ttf') format('truetype');}
+    @font-face {font-family: 'Roboto Medium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.woff') format('woff');}
+    @font-face {font-family: 'Roboto Bold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.woff') format('woff');}
+    @font-face {font-family: 'Apercu Regular';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.woff') format('woff');}
+    @font-face {font-family: 'Apercu Medium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.woff') format('woff');}
+    @font-face {font-family: 'Apercu Bold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.woff') format('woff');}
+    @font-face {font-family: 'Sharp Sans Regular';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.woff') format('woff');}
+    @font-face {font-family: 'Sharp Sans Medium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.woff') format('woff');}
+    @font-face {font-family: 'Sharp Sans Bold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.woff') format('woff');}
+    @font-face {font-family: 'FreigSanProBold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.otf') format('opentype');}
+    @font-face {font-family: 'FreigSanProMed';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.otf') format('opentype');}
+    @font-face {font-family: 'FaktSlabProMedium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.otf') format('opentype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.eot') format('eot');}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            Menu <i class="fa fa-bars"></i>
+          </button>
+          <!-- <a class="navbar-brand page-scroll text-center" href="#page-top">
+            <img id="everloop" src="img/everloop.png"/> 
+            <span class="hidden-xs hidden-sm ">
+              <span class="light">Hackathon México vs Coronavirus</span> 
+            </span>
+          </a> -->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#about">Sobre</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#generalRules">Formato</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#schedule">Agenda</a>
+            </li>
+           <li>
+              <a class="page-scroll" href="#participar">Participar</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#projects">Projetos</a>
+            </li>
+            <!-- <li>
+              <a class="page-scroll" href="#location">Localização</a>
+            </li> -->
+            <!-- <li>
+              <a class="page-scroll" href="#contact">Contato</a>
+            </li> -->
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-12">
+              <h1 class="brand-heading">Hackathon México vs Coronavirus</h1>
+              <p class="intro-text">El hackathon en línea de México contra COVID-19
+
+
+</p>
+              <a href="#about" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2 class='text-center'>Sobre el hackathon</h2>
+                   <p>
+COVID-19 representa un grave peligro para México debido a nuestra alta densidad de población y al número abismalmente bajo de camas de hospital por cada 100 personas. En el peor de los casos, las infecciones por coronavirus en México pueden estar comenzando y podemos estar viendo un tsunami de casos en las próximas semanas. Es alentador ver que el gobierno mexicano da algunos pasos iniciales y las empresas mexicanas cambian a Trabajar desde casa. Sin embargo, hasta que tengamos una vacuna, las infecciones pueden estallar en cualquier momento y en cualquier lugar. Las estimaciones actuales sugieren que estamos a 12 meses de una vacuna, por lo que podríamos enfrentarnos a múltiples interrupciones generalizadas debido a infecciones que abruman nuestra capacidad de atención médica o debido a la desaceleración económica inducida por el distanciamiento social.
+
+Por lo tanto, estamos pidiendo a la comunidad tecnológica mexicana que se una y colabore para construir proyectos que puedan ayudar a otros mexicanos durante la pandemia de COVID-19.</p>
+<p>
+En México tenemos un gran riesgo y de ahí esta perspectiva sombría:
+</p>
+
+  <ul>
+      <li>Riesgo de salud- 8.95% de la <a href="https://es.wikipedia.org/wiki/Demograf%C3%ADa_de_M%C3%A9xico">población</a> mexicana está encima de los 60 años.  <a href="https://www.eluniversal.com.mx/english/covid-19-mexico-must-prevent-collapse-its-health-system ">Nuestro sistema de salud</a> estará en jaque si el problema del Coronavirus se extiende. </li>
+      <li>Desempleo - El 23 de marzo, la bolsa de valores <a href="https://www.forbes.com/sites/kenrapoza/2020/03/23/mexico-tries-to-boost-economy-as-coronavirus-scares-mount/#42030ff73086">cayó un 43.6% de su pico del 17 de enero</a>. Si la economía baja 5 por ciento este año, se pueden  <a href="https://www.ft.com/content/4879b109-6c93-455c-ac23-3a00f2f454ba">perder 1.7 millones de trabajos</a>.</li>
+      <li> Economía -  <a href="https://mexiconewsdaily.com/news/coronavirus/coronavirus-could-hurt-mexicos-exports/">México tendrá la octava economía más afectada</a>, después de la Unión Europea, los Estados Unidos, Japón, Corea del Sur, Vietnam, Singapur y el Reino Unido. El Coronavirus puede afectar las exportaciones con el valor de hasta $1.3 mil millones de dólares (Exportaciones automotrices pueden caer hasta por $493 millones de dólares).</li>
+  </ul>
+
+
+
+<p><a href="https://forms.gle/umYGubsMXTHv6c359">¡Regístrate ahora!</a></p>
+
+<!--           <p>É com muita animação que o Hackathon México vs Coronavirus em parceria com a <a href="https://www.absamhost.com.br">AbsamHost</a> e do Diretório Acadêmico do curso de Engenharia de Computação da UEFS anuncia o <strong>MATRIX Labs Hackathon</strong> durante a XVII SIECOMP. O MATRIX Labs Hackathon irá acontecer dentro da XVII SIECOMP nos dias 16 e 17 de Março.</p>
+
+          <p>As inscrições estão abertas à todos os participantes da XVII SIECOMP e devem ser feitas através do nosso <a href="https://goo.gl/forms/tvWTE4Dml3IRjMGn2">formulário de inscrição</a>. Durante todo o hackathon o time do Hackathon México vs Coronavirus e seus parceiros estarão dando apoio técnico, mentoria e ideação.</p>
+
+          <p><strong>Desafio:</strong> Construa um app para o <a href="http://creator.matrix.one">MATRIX Creator</a> que ajude a melhorar o dia-a-dia das pessoas no qual use pelo menos três recursos da <a href="https://matrix-io.github.io/matrix-documentation/">API do MATRIX Cretor</a> e uma API de qualquer serviço externo de sua escolha.</p>
+
+          <p><strong>Prêmio:</strong> O time vencedor receberá 1 kit MATRIX Creator e R$ 500 reais de servidor na AbsamHost. O segundo lugar receberá 1 kit MATRIX Creator. O terceiro colocado receberá R$ 250 reais de servidor na AbsamHost. Cada kit MATRIX Creator conta com: MATRIX Creator + Raspberry Pi 3 + Raspberry Pi Câmera V2 + Cartão de Memória de 32GB + Fonte de Alimentação.</p>
+
+          <p><a href="#modal" data-toggle="modal">Confira a lista dos selecionados!</a></p> -->
+
+          <!-- Modal -->
+<!--           <div class="modal fade" id="modal" tabindex="-1" role="dialog" >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Participantes do 1˚ MATRIX Labs Hackathon</h4>
+                </div>
+                <div class="modal-body">
+                  João Victor Mota do Nascimento</br>
+                  Aecio Júnior</br>
+                  Victor Rodrigues Figueiredo</br>
+                  Ícaro Cardoso Rios</br>
+                  Cleybson cardoso leite</br>
+                  José Ricardo Nogueira Magalhães</br>
+                  Lindelmo Havallon da Silva Pinto Azevedo</br>
+                  Lucas Almeida Silva</br>
+                  Lucas Ventura Paiva</br>
+                  Weverson Gomes</br>
+                  Nathalia Garcia dos Reis</br>
+                  Arthur Hagnês de Jesus Ferreira</br>
+                  José Victor Cardim Moura</br>
+                  Roberto Silva Nunes Lago</br>
+                  Matheus Galvão Correia</br>
+                  Lucas Vinícius dos Santos Assis</br>
+                  Ricardo Batista da Silva</br>
+                  Lucas Santana Carneiro</br>
+                  Nilson Augusto Magalhães Moraes Neto</br>
+                  Leandro Pereira Sampaio
+                </div>
+                <div class="modal-footer">
+                  </br>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- General Rules Section -->
+
+    <section id="generalRules" class="darker-black content-section">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2 class='text-center'>Formato</h2>
+<ul>
+<li>Hackathon se ejecutará a partir del 2 de mayo de 2020 (sábado).</li>
+<li>Los equipos se formarán en línea y el hackathon ocurrirá virtualmente. Se utilizará una plataforma como Discord / Slack para que las personas discutan proyectos y formen equipos</li>
+<li>Habrá un día de demostración el domingo por la noche cuando finalice y los proyectos de trabajo en progreso se mostrarán a un grupo de audiencia</li>
+<li>El día de demostración será moderado por el equipo organizador del hackathon, pero cualquiera es libre de unirse para ver proyectos</li>
+<li>Durante el día de demostración, el equipo organizador y los asesores ayudarán a cualquier proyecto prometedor con ayuda financiera o recursos u orientación</li>
+<li>Premios: por decidir</li>
+</ul>
+<!--             <p>Todas as equipes devem ter 4 pessoas.</p>
+            <p>Todas as equipes devem mandar seus times para o email (<strong>diego.leite@admobilize.com</strong>), para poder participar do evento. O título deve ser o nome do projeto. O corpo do e-mail deve conter uma descrição de até 140 caracteres sobre o projeto e o nome de cada integrante do time.</p>
+            <p>Para receber o kit MATRIX Creator de trabalho cada integrante do time deverá assinar o termo de responsabilidade que será fornecido no dia do hackathon.</p>
+            <p>Para que a equipe possa iniciar os trabalhos deve ser criado um repositório aberto no github. O link deve ser enviado na mesma thread de e-mail até o horário limite descrito na agenda do hackathon.</p>
+            <p>Para que o projeto possa ser apresentado na sessão de pitches o app desenvolvido deve ter sido publicado na <a href="http://apps.matrix.one">MATRIX App Store</a>. O link gerado deve ser enviado na mesma thread de e-mail até o horário descrito na agenda do hackathon.</p>
+            <p>Todas as equipes convocadas para a sessão de pitch terá que apresentar uma demonstração de sua solução e slides não serão permitidos. A apresentação será de 5 minutos + 3 minutos de sessão de perguntas e respostas dos jurados.</p>
+            <p>As equipes vencedoras estarão sujeitas a uma revisão de código em algum momento após o evento, ou imediatamente antes de receber o prêmio.</p>
+            <p>É proibido o uso de código pronto! Todos iniciarão a maratona de programação ao mesmo tempo. Isso garante a imparcialidade da competição. Não participe da competição se for reutilizar um projeto já existente.</p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="content-section text-center">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2>Agenda</h2>
+            <p>De 2 a 3 de Mayo de 2020</p>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">2/05/2020</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">10:00am</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Final Projects Decided</div>
+              </div>
+            </div>
+            <!-- <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">16/03/2017 - 9:00am</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">LABOTEC III - Laboratório de Redes</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Início do Hackathon</div>
+              </div>
+            </div> -->
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">2/05/2020</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">12:00pm</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Team formation</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">2/05/2020</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">1:00pm</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">We start!</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">3/05/2020</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">4:00pm</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Start the project presentations</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">3/05/2020</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">6:00pm</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Declare the winners and discuss further steps</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<section id="participar" class="darker-black content-section">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2>Participar</h2>
+
+            <p>Regístrese en  <a href="https://forms.gle/umYGubsMXTHv6c359">el formulario de Google</a> a continuación para participar. Este Hackathon se realizará en línea, a través de un grupo de Discord -</p>
+            <p><strong>Te alentamos a participar si:</strong></p>
+            <p></p><ul>
+              <li>Tienes un projecto en mente pero necesitas un equipo para implementarla.</li>
+              <li>Tienes ciertas hablilidades pero necesitas projectos en los cuales contribuir.</li>
+              <li>Puedes donar recursos (Por ejemplo hosting, dominios o equipo).</li>
+            </ul><p></p>
+            
+
+            <p><strong>¿Quiénes pueden participar?</strong></p>
+                    <ul>
+                     <li>Desarrolladores / Ingenieros de Software</li>
+                    <li>Ingenieros de Hardware</li>
+                    <li>Diseñadores</li>
+                    <li>Personas de negocios / Product Managers</li>
+                    <li>Vendedores/ Digital Marketing Expertos</li>
+                    <li>Proveedores del cuidado de la salud - Doctores / Expertos</li>
+                        </li>
+                  </ul>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="content-section">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2 class="text-center">Ideas de proyectos</h2>
+
+            <p>
+<strong>Protegiendo a la población vulnerable- ¿Cómo proteger a la población vulnerable de los efectos del COVID-19?</strong>
+<br>
+La crisis de COVID-19 tiene drásticos impactos físicos, mentales, económicos y sociales en individuos y comunidades. Buscamos soluciones que garanticen que las poblaciones vulnerables, como los ancianos, las personas inmunocomprometidas y las personas con discapacidades de movilidad, tengan acceso a sus necesidades básicas durante este tiempo. También estamos buscando formas de proporcionar estabilidad financiera a los trabajadores de bajos ingresos que han sido despedidos o han tenido que reducir sus horas debido a la crisis de COVID-19 que han experimentado reduccióin de ingresos y son incapaces de trabajar de forma remota.
+<br>
+<br>
+
+<strong>Apoyando el sistema de salud - ¿Cómo apoyar hospitales con la escasez de personal, suministros y recursos?</strong>
+<br>
+
+El sistema de salud está bajo una presión inmensa, la cual solo se espera que empeore a medida que aumenta el número de casos. Buscamos soluciones para ayudar a aliviar la carga de personal que actualmente recaen sobre los proveedores. El sitema de salud tiene la tarea de responder a los desafíos más apremiantes de los proveedores, como la forma de optimizar el personal y la distribución de atención médica; para clasificar los síntomas de forma asincrónica, a través de soluciones digitales automatizadas.
+</p>
+
+
+          <!--   <p>
+              <a href="https://github.com/PedroPCardoso/moodify"><strong>Moodify</strong></a> </br>
+              <strong>Team: </strong>Pedro Cardoso, Luan Rios, Rejanio Moraes </br>
+              <strong>Description: </strong>Recognize user's mood, search for Spotify playlists to help his day. These playlists are found by user's interest, crossing information like geolocation and most played songs.
+            </p>
+            <p>
+              <a href="https://github.com/vjoao/maternity-sentinel"><strong>Maternity Sentinel</strong></a> </br>
+              <strong>Team: </strong>João Victor Mota, Lucas Carneiro, Lucas Vinicius, Nilson Augusto </br>
+              <strong>Description: </strong>A device responsible by monitoring maternity environment. The main features are: Facial recognition for medical responsible team, verification for humidity and temperature to certify the ideal conditions for maternity.
+            </p>
+            <p>
+              <a href="https://github.com/weversongomes/pillcontroller"><strong>PillController</strong></a> </br>
+              <strong>Team: </strong>Weverson Gomes, José Victor, Roberto Nunes, Iago Rios </br>
+              <strong>Description: </strong>The main purpose is control lockers that keeps pills and helps users not forget to take his medicines.
+            </p>
+            <p>
+              <a href="https://github.com/Figueiredovr/slider"><strong>Slider</strong></a> </br>
+              <strong>Team: </strong>Victor R. Figueiredo, Lucas A. Silva, Leandro Sampaio, Matheus Galvão</br>
+              <strong>Description: </strong>Control Google Slide presentations with gestures.
+            </p>
+            <p>
+              <a href="https://github.com/lucaspaiva1/hackathon"><strong>SmartOffice</strong></a> </br>
+              <strong>Team: </strong>Lucas Paiva, Francisco Alberto, Lindelmo Silva, Cleybson Leite </br>
+              <strong>Description: </strong>Automate an office, you will be able to control room temperature and light using the smartphone. Another great feature is the ability to unlock the office door using facial recognition.
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="darker-black content-section text-center">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2>Patrocinadores</h2>
+              <div class="row">
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <img src="img/undostres.jpg" style="width:200px;">
+                </div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
+              </div>
+            <!-- <p>Universidade Estadual de Feira de Santana <strong>(LABOTEC III - Laboratório de Redes)</strong></p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- Location Section -->
+    <section id="location" class="content-section text-center">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2>Organizadores</h2>
+            <p>
+                Rnjai Lamba,<a href="https://undostres.com.mx">UnDosTres</a>
+                <br>
+                Vikram Deswal, <a href="https://undostres.com.mx">UnDosTres</a>
+                <br>
+                <a href="http://www.ignia.mx/project/otto-graff/">Otto Graff</a>, <a href="http://www.ignia.mx/">Ignia Partners</a>
+                <br>
+                <a href="https://mx.linkedin.com/in/rafaeldeharo">Rafael de Haro</a>, <a href="http://www.variv.com/">VARIV Capital</a>
+                <br>
+                <a href="https://mx.linkedin.com/in/jrobertonunez">José Roberto N.</a>, <a href="https://www.youles.mx/">Youles</a>
+                <br> 
+                Luis de la Mora
+                <br>                                
+
+
+
+            </p>
+            <!-- <p>Universidade Estadual de Feira de Santana <strong>(LABOTEC III - Laboratório de Redes)</strong></p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--     <div id="map">
+    </div> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class=" container content-section text-center">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2>Hackathon México vs Coronavirus</h2>
+          <p>Feel free to get in touch with us.</p>
+          <p><a href=""></a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; Hackathon México vs Coronavirus 2020</p>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe7xQb1YWBLPDqFYAKE4G8_ysGyfuYyPg"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+  </body>
+</html>
